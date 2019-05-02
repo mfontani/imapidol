@@ -11,10 +11,11 @@ user-given command when such changes happen.
 
 ## What can I use it for?
 
-You might want to be notified (i.e. via `notify-send` or `growl`) when a
-given mailbox (`INBOX` or `[Gmail]/All Mail`) gets new messages, or you
-might want to automatically trigger a local `IMAP` synchronisation tool
-(i.e. `gmailieer` or `offlineimap`), or whatever else you think you'd
+You might want to be notified (i.e. via `notify-send` or `growl`) when a given
+mailbox (`INBOX` or `[Gmail]/All Mail`) gets new messages, or you might want to
+automatically trigger a local `IMAP` synchronisation tool (i.e.
+[lieer](https://github.com/gauteh/lieer) or
+[offlineimap](https://www.offlineimap.org/)), or whatever else you think you'd
 want to do when a given `IMAP` folder gets updated.
 
 I mostly use it to be notified, so I can choose whether and when to manually
