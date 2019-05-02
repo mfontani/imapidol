@@ -1,27 +1,41 @@
-; General settings apply to all accounts below, unless overridden.
-; Note that "email", "password_insecure", "password_command" aren't valid here.
-; Examples:
+;; General settings apply to all accounts below, unless overridden.
+;; Note that "email", "password_insecure", "password_command" aren't valid here.
+;; Example global options you might want to set:
 ; folder=[Gmail]/All Mail
 ; server=imap.example.com:993
 ; idle_timeout_minutes = 10
-; An external notification command, run with /bin/sh -c '...'
-; ... which can take environment variables:
-; - $IMAPIDOL_ACCOUNT
-; - $IMAPIDOL_EMAIL
-; - $IMAPIDOL_FOLDER
-; - $IMAPIDOL_SERVER
+;; An external notification command, run with /bin/sh -c '...'
+;; ... which can take environment variables:
+;; - $IMAPIDOL_ACCOUNT
+;; - $IMAPIDOL_EMAIL
+;; - $IMAPIDOL_FOLDER
+;; - $IMAPIDOL_SERVER
 ; command=/usr/bin/notify-send imapidol "You've got mail on $IMAPIDOL_EMAIL!"
 ;
-; Account-specific settings:
+;; Account-specific settings. You need at least one account!
+;; The account name is between square brackets.
+;; Use whatever you prefer - "Work", "Personal", "gmail", "foo@bar.com", etc.
 ; [foo]
 ; email=foobar@blah.com
-; This uses an external command to get the password, run with /bin/sh -c '...'
+;; This uses an external command to get the password, run with /bin/sh -c '...'
+;; ... which can take environment variables:
+;; - $IMAPIDOL_ACCOUNT
+;; - $IMAPIDOL_EMAIL
+;; - $IMAPIDOL_FOLDER
+;; - $IMAPIDOL_SERVER
 ; password_command=pass email/foobar@blah.com
+; password_command=pass email/$IMAPIDOL_EMAIL
+;; Providing an account-level override for "folder" ensures this account
+;; watches a different folder than the one globally specified.
 ; folder=Important
+;; Same goes for how long to idle for:
 ; idle_timeout_minutes = 5
 ;
+;; Another sample account, checked concurrently with the previous one.
 ; [bar]
 ; email=foobar@blah.com
-; If you really must, just type the insecurely-stored password:
+;; If you really must, just type the insecurely-stored password:
 ; password_insecure=hunter2
 ; command=/usr/bin/notify-send 'imapidol bar' "You've got mail!"
+;; Note that this account, not having overridden "folder", watches the global
+;; "folder", default "INBOX".
