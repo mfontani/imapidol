@@ -1,0 +1,16 @@
+github.com/adrg/xdg v0.0.0-20190319220657-88e5137d2444 h1:LFWged5Fa7JSlGV5GzKt8qEwPBUtLV65aIEaD+Ver+8=
+github.com/adrg/xdg v0.0.0-20190319220657-88e5137d2444/go.mod h1:ZuOshBmzV4Ta+s23hdfFZnBsdzmoR3US0d7ErpqSbTQ=
+github.com/emersion/go-imap v1.0.0-beta.4 h1:QglkDofK1RhU471SqcHxzRlSuPsCL6YpFc+NR5O6H6Q=
+github.com/emersion/go-imap v1.0.0-beta.4/go.mod h1:mOPegfAgLVXbhRm1bh2JTX08z2Y3HYmKYpbrKDeAzsQ=
+github.com/emersion/go-imap-idle v0.0.0-20180114101550-2af93776db6b h1:q4qkNe/W10qFGD3RWd4meQTkD0+Zrz0L4ekMvlptg60=
+github.com/emersion/go-imap-idle v0.0.0-20180114101550-2af93776db6b/go.mod h1:o14zPKCmEH5WC1vU5SdPoZGgNvQx7zzKSnxPQlobo78=
+github.com/emersion/go-message v0.9.1/go.mod h1:m3cK90skCWxm5sIMs1sXxly4Tn9Plvcf6eayHZJ1NzM=
+github.com/emersion/go-sasl v0.0.0-20161116183048-7e096a0a6197 h1:rDJPbyliyym8ZL/Wt71kdolp6yaD4fLIQz638E6JEt0=
+github.com/emersion/go-sasl v0.0.0-20161116183048-7e096a0a6197/go.mod h1:G/dpzLu16WtQpBfQ/z3LYiYJn3ZhKSGWn83fyoyQe/k=
+github.com/emersion/go-textwrapper v0.0.0-20160606182133-d0e65e56babe/go.mod h1:aqO8z8wPrjkscevZJFVE1wXJrLpC5LtJG7fqLOsPb2U=
+github.com/fredli74/lockfile v0.0.0-20180308112638-92f5e1efe5d6 h1:V1cvRWIIirKdCty152f2jl05Q+vYG3QKmxHhfgP+Af4=
+github.com/fredli74/lockfile v0.0.0-20180308112638-92f5e1efe5d6/go.mod h1:2o7gEO6MFrLBcI9C4xQrR5gU4OqX4UWnpmO1Zo7/B0M=
+golang.org/x/text v0.3.0 h1:g61tztE5qeGQ89tm6NTjjM9VPIm088od1l6aSorWRWg=
+golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
+gopkg.in/ini.v1 v1.42.0 h1:7N3gPTt50s8GuLortA00n8AqRTk75qOP98+mTPpgzRk=
+gopkg.in/ini.v1 v1.42.0/go.mod h1:pNLf8WUiyNEtQjuu5G5vTm06TEv9tsIgeAvK8hOrP4k=

@@ -1,0 +1,27 @@
+; General settings apply to all accounts below, unless overridden.
+; Note that "email", "password_insecure", "password_command" aren't valid here.
+; Examples:
+; folder=[Gmail]/All Mail
+; server=imap.example.com:993
+; idle_timeout_minutes = 10
+; An external notification command, run with /bin/sh -c '...'
+; ... which can take environment variables:
+; - $IMAPIDOL_ACCOUNT
+; - $IMAPIDOL_EMAIL
+; - $IMAPIDOL_FOLDER
+; - $IMAPIDOL_SERVER
+; command=/usr/bin/notify-send imapidol "You've got mail on $IMAPIDOL_EMAIL!"
+;
+; Account-specific settings:
+; [foo]
+; email=foobar@blah.com
+; This uses an external command to get the password, run with /bin/sh -c '...'
+; password_command=pass email/foobar@blah.com
+; folder=Important
+; idle_timeout_minutes = 5
+;
+; [bar]
+; email=foobar@blah.com
+; If you really must, just type the insecurely-stored password:
+; password_insecure=hunter2
+; command=/usr/bin/notify-send 'imapidol bar' "You've got mail!"
